@@ -11,6 +11,7 @@
 		D58790DB29DE13B800C6655E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58790DA29DE13B800C6655E /* ContentView.swift */; };
 		D58790DD29DE13BA00C6655E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58790DC29DE13BA00C6655E /* Assets.xcassets */; };
 		D58790E029DE13BA00C6655E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D58790DF29DE13BA00C6655E /* Preview Assets.xcassets */; };
+		D58790E829DE13FB00C6655E /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58790E729DE13FB00C6655E /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D58790DA29DE13B800C6655E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D58790DC29DE13BA00C6655E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D58790DF29DE13BA00C6655E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D58790E729DE13FB00C6655E /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		D58790D729DE13B800C6655E /* PageCurlSwipeAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				D58790E629DE13E100C6655E /* View */,
 				D58790D829DE13B800C6655E /* PageCurlSwipeAnimationApp.swift */,
 				D58790DA29DE13B800C6655E /* ContentView.swift */,
 				D58790DC29DE13BA00C6655E /* Assets.xcassets */,
@@ -65,6 +68,14 @@
 				D58790DF29DE13BA00C6655E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D58790E629DE13E100C6655E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D58790E729DE13FB00C6655E /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D58790DB29DE13B800C6655E /* ContentView.swift in Sources */,
+				D58790E829DE13FB00C6655E /* Home.swift in Sources */,
 				D58790D929DE13B800C6655E /* PageCurlSwipeAnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
