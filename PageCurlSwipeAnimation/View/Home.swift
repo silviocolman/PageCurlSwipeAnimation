@@ -13,9 +13,21 @@ struct Home: View {
     
     var body: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            VStack(spacing: 15) {
+            VStack(spacing: 20) {
                 ForEach(images) { image in
-                    CardView(image)
+                    PeelEffect {
+                        CardView(image)
+                    } onDelete: {
+                        /// Borrar tarjeta.
+                        if let index = images.firstIndex(where: { C1 in
+                            C1.id == image.id
+                        }) {
+                            let _ = withAnimation(.easeInOut(duration: 0.35)) {
+                                images.remove(at: index)
+                            }
+                        }
+                    }
+
                 }
             }
             .padding(15)
@@ -42,7 +54,7 @@ struct Home: View {
             }
         }
         .frame(height: 130)
-        .contentShape(Rectangle() )
+        .contentShape(Rectangle())
     }
 }
 
